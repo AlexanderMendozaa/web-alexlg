@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaMundo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="recibir.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <button class="boton"><span id="open-close"><i class='bx bx-menu'></i></span></button>
+        <a href="index.html" class="enlace"><img src="img/Cabecera5.png" alt="imagen del logo " class="logo"></a>
+        <ul class="menu">
+            <li><a href="https://www.facebook.com/profile.php?id=100008808705306">Contacto</a></li>
+            <li><a href="https://www.iea.nl/sites/default/files/2021-03/IEA%20privacy%20policy%20Spanish%20pdf.pdf">Acerca
+                    de</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class='bx bx-caret-left'></i></button>
+            </div>
+            <img src="img/Cabecera5.png" width="120" alt="">
+            <ul>
+                <li><a href="index.html">Introduccion</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="condicionales.html">Condicionales</a></li>
+                <li><a href="ciclos.html">Ciclos</a></li>
+                <li><a href="objclass.html">Objetos y clases</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="content">
+
+            <h2>¿Qué es una variable en Java?</h2>
+            <p>Una variable en términos de programación se define como un espacio de memoria que le proporciona el
+                ordenador, dicha variable cuenta o debe contar con un nombre simbólico que va estar asociado a espacio
+                antes mencionado. Es importante mencionar que este espacio va contener un dato o valor, que como su
+                nombre lo dice dicho dato o valor puede cambiar en cualquier momento.
+
+                Cada uno de los tipos de variables en java que mencionamos anteriormente van a tener un peso hablando en
+                términos de informática y estos se miden en bytes, mencionaremos a continuación el peso de cada una y el
+                valor o tipo de dato que puede ser asignado a cada tipo de variable, como se muestra en la siguiente
+                imagen
+            </p><br>
+            <img src="img/tabla.png" width="40%" alt="">
+
+            <p> Es importante señalar que en java no definimos como variable a las cadenas de caracteres es decir, a los
+                String ya que este dato no es una variable sino una clase, es por ello y si hemos sido observadores
+                cuando declaramos variables o datos primitivos todos los tipos de datos empiezan en letras minúsculas,
+                por ejemplo: int, char, long etc pero si declaramos el dato String empieza con mayúscula.
+            </p><br>
+            <h2>Variables primitivas</h2>
+
+            <p>Las variables primitivas son las variables básicas predefinidas del lenguaje. <br><br>
+
+                byte: Es la unidad numérica más pequeña en Java y te aparta 1 byte en la memoria del programa. El número
+                almacenado en la variable byte debe ir de -128 a 127. <br><br>
+                short: Otra unidad numérica, esta vez un poco más grande que byte. Almacena un valor de -32768 a 32767
+                con un gasto de memoria de 2 bytes. <br><br>
+                int: El entero es una unidad que almacena números al igual que los anteriores y puede almacenar hasta
+                2*109 , con un gasto de memoria de 4 bytes. <br><br>
+                long: El long es mucho más grande que los anteriores y ocupa 8 bytes. Igualmente se usa para almacenar
+                datos numéricos. <br><br>
+                float: Esta variable es usada para almacenar en ella decimales simples y ocupa 4 bytes de memoria. <br><br>
+                double: El double es especialmente para decimales dobles y ocupa 8 bytes. <br><br>
+                char: Variable que almacena un carácter simple y ocupa 2 bytes. <br><br>
+                boolean: Esta variable es muy diferente a las anteriores, ya que en este caso solo almacena dos tipos de
+                datos, los cuales pueden ser “true” o “false”. <br><br>
+            </p>
+
+        </div>
+    </section>
+    <div class="coment">
+        <label for="com">Dejanos tu opinion :)</label><br>
+        <textarea name="comentarios" id="intxt" cols="40" rows="3"></textarea>
+        <button class="enviar" onclick="getValor()">Enviar</button><br>
+        <label for="res">Respuestas:</label><br>
+        <textarea name="com" id="mtxt" cols="50" rows="7" readonly></textarea>
+
+    </div>
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // Muestra SideBar
+        $('.boton').on('click', function () {
+            $(".container").toggleClass('show');
+        })
+
+        // Oculta SideBar
+        $('.side-hide').on('click', function () {
+            $(".container").toggleClass('show');
+        });
+    </script>
+    <footer>
+        <p>@2022 Alexander Mendoza. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

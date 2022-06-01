@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaMundo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="recibir.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <button class="boton"><span id="open-close"><i class='bx bx-menu'></i></span></button>
+        <a href="index.html" class="enlace"><img src="img/Cabecera5.png" alt="imagen del logo " class="logo"></a>
+        <ul class="menu">
+            <li><a href="https://www.facebook.com/profile.php?id=100008808705306">Contacto</a></li>
+            <li><a href="https://www.iea.nl/sites/default/files/2021-03/IEA%20privacy%20policy%20Spanish%20pdf.pdf">Acerca
+                    de</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class='bx bx-caret-left'></i></button>
+            </div>
+            <img src="img/Cabecera5.png" width="120" alt="">
+            <ul>
+                <li><a href="index.html">Introduccion</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="condicionales.html">Condicionales</a></li>
+                <li><a href="ciclos.html">Ciclos</a></li>
+                <li><a href="objclass.html">Objetos y clases</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="content">
+            
+            <h2>Las condicionales en Java</h2>
+            <p>Los condicionales en Java, son una estructura de control esencial al momento de programar y aprender a
+                programar. La mayoría de los lenguajes de programación utilizados actualmente (por no decir que todos),
+                nos permiten hacer uso de estas estructuras para definir ciertas acciones, condiciones especificas en
+                nuestros algoritmos y programas.
+            </p><br><br>
+
+            <p>Un condicional, permite establecer una serie de reglas al interior de nuestro programa, que nos ayudan a
+                determinar qué acciones llevar a cabo dadas ciertas circunstancias. Por ejemplo, si queremos decidir
+                cuándo dar acceso a un usuario, dependiendo de si el nombre de usuario y contraseña son correctos. Para
+                algo como esto, es útil un condicional, nos permite verificar si determinada condición se cumple (en
+                este caso si la contraseña y el nombre de usuario son correctos) y de acuerdo a que se cumpla o no,
+                llevar a cabo un conjunto de acciones.
+            </p><br>
+
+            <p>Los condicionales aumentan la "expresividad" de un programa en Java (y cualquier otro lenguaje de
+                programación). Es decir, nos permiten considerar diferentes situaciones con antelación, evitando o
+                permitiendo sortear diferentes tipos de situaciones que son del interés de nuestra aplicación.
+            </p><br><br>
+            <p>Ahora bien, existen diferentes tipos de condicionales, cada uno tiene una utilidad y funcionalidad
+                diferente. Cada uno, considera diferentes situaciones que se pueden llegar a presentar durante la
+                ejecución de un algoritmo o programa en Java. Depende entonces del conocimiento que tengamos acerca de
+                cada uno de los condicionales saber determinar correctamente cuando es necesario implementar uno u otro.
+                Tenemos a nuestra disposición los siguientes tipos de condicionales en Java: <br><br>
+
+                Condicional If en Java <br>
+                Condicional if-else en Java <br>
+                Condicional Switch en Java <br><br>
+                Como mencioné anteriormente, cada uno de estos condicionales tiene ciertas características que lo hacen
+                útil para algunos casos específicos. A lo largo de los contenidos de esta sección veremos cada uno de
+                estos al detalle, aprendiendo durante el proceso los componentes de un condicional, sintaxis de los
+                condicionales y esas características particulares que permiten decidir cuál usar en qué momento; veremos
+                también el concepto de condicionales anidados, y algunas otras cositas. Por ahora, espero que sea clara
+                la función de un condicional en Java o en cualquier lenguaje de programación.</p>
+
+        </div>
+    </section>
+    <div class="coment">
+        <label for="com">Dejanos tu opinion :)</label><br>
+        <textarea name="comentarios" id="intxt" cols="40" rows="3"></textarea>
+        <button class="enviar" onclick="getValor()">Enviar</button><br>
+        <label for="res">Respuestas:</label><br>
+        <textarea name="com" id="mtxt" cols="50" rows="7" readonly></textarea>
+
+    </div>
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // Muestra SideBar
+        $('.boton').on('click', function () {
+            $(".container").toggleClass('show');
+        })
+
+        // Oculta SideBar
+        $('.side-hide').on('click', function () {
+            $(".container").toggleClass('show');
+        });
+    </script>
+    <footer>
+        <p>@2022 Alexander Mendoza. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

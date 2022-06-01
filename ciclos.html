@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaMundo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="recibir.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <button class="boton"><span id="open-close"><i class='bx bx-menu'></i></span></button>
+        <a href="index.html" class="enlace"><img src="img/Cabecera5.png" alt="imagen del logo " class="logo"></a>
+        <ul class="menu">
+            <li><a href="https://www.facebook.com/profile.php?id=100008808705306">Contacto</a></li>
+            <li><a href="https://www.iea.nl/sites/default/files/2021-03/IEA%20privacy%20policy%20Spanish%20pdf.pdf">Acerca
+                    de</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class='bx bx-caret-left'></i></button>
+            </div>
+            <img src="img/Cabecera5.png" width="120" alt="">
+            <ul>
+                <li><a href="index.html">Introduccion</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="condicionales.html">Condicionales</a></li>
+                <li><a href="ciclos.html">Ciclos</a></li>
+                <li><a href="objclass.html">Objetos y clases</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="content">
+
+            <h2>Las ciclos en Java</h2>
+            <p>Los ciclos o también conocidos como bucles, son una estructura de control de total importancia para el
+                proceso de creación de un programa. Java y prácticamente todos los lenguajes más populares de la
+                actualidad nos permiten hacer uso de estas estructuras y muchas más. Un ciclo en Java o bucle en Java
+                (como prefieras llamarlo) permite repetir una o varias instrucciones cuantas veces lo necesitemos o sea
+                necesario, por ejemplo, si quisiéramos escribir los números del uno al cien no tendría sentido escribir
+                cien líneas de código mostrando un número en cada una de estas, para eso y para varias cosas más (que
+                veremos enseguida), es útil un ciclo. Un ciclo nos ayuda a llevar a cabo una tarea repetitíva en una
+                cantidad de líneas muy pequeña y de forma prácticamente automática.
+            </p><br><br>
+
+            <p>Existen diferentes tipos de ciclos o bucles en Java, cada uno tiene una utilidad para casos específicos y
+                depende de nuestra habilidad y conocimientos poder determinar en qué momento es bueno usar alguno de
+                ellos. Tenemos entonces a nuestra disposición los siguientes tipos de ciclos en Java: <br><br>
+
+                Ciclo for en Java <br>
+                Ciclo while en Java <br>
+                Ciclo do-while en Java <br><br>
+                Como mencioné anteriormente, cada uno de estos ciclos en Java tiene ciertas características que lo hacen
+                útil para algunos casos específicos. A lo largo de los contenidos de esta sección de ciclos en Java
+                veremos cada uno de estos al detalle, aprendiendo durante el proceso los componentes, sintaxis y esas
+                características particulares que permiten decidir cual usar en qué momento, veremos también el concepto
+                de contador y acumulador que parte de la existencia de los ciclos en Java.
+            </p><br>
+
+           
+
+        </div>
+    </section>
+    <div class="coment">
+        <label for="com">Dejanos tu opinion :)</label><br>
+        <textarea name="comentarios" id="intxt" cols="40" rows="3"></textarea>
+        <button class="enviar" onclick="getValor()">Enviar</button><br>
+        <label for="res">Respuestas:</label><br>
+        <textarea name="com" id="mtxt" cols="50" rows="7" readonly></textarea>
+
+    </div>
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // Muestra SideBar
+        $('.boton').on('click', function () {
+            $(".container").toggleClass('show');
+        })
+
+        // Oculta SideBar
+        $('.side-hide').on('click', function () {
+            $(".container").toggleClass('show');
+        });
+    </script>
+    <footer>
+        <p>@2022 Alexander Mendoza. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

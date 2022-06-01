@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaMundo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="recibir.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <button class="boton"><span id="open-close"><i class='bx bx-menu'></i></span></button>
+        <a href="index.html" class="enlace"><img src="img/Cabecera5.png" alt="imagen del logo " class="logo"></a>
+        <ul class="menu">
+            <li><a href="https://www.facebook.com/profile.php?id=100008808705306">Contacto</a></li>
+            <li><a href="https://www.iea.nl/sites/default/files/2021-03/IEA%20privacy%20policy%20Spanish%20pdf.pdf">Acerca
+                    de</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class='bx bx-caret-left'></i></button>
+            </div>
+            <img src="img/Cabecera5.png" width="120" alt="">
+            <ul>
+                <li><a href="index.html">Introduccion</a></li>
+                <li><a href="variables.html">Variables</a></li>
+                <li><a href="condicionales.html">Condicionales</a></li>
+                <li><a href="ciclos.html">Ciclos</a></li>
+                <li><a href="objclass.html">Objetos y clases</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="content">
+
+            <h2>Objetos y clases en Java</h2>
+            <p>Vamos a imaginar que somos los dueños o administradores de una fábrica de galletas, vendemos diferentes
+                tipos de galletas con diferentes formas, sabores y colores, evidentemente al tener diferentes formas
+                para nuestras galletas necesitaremos varios moldes para las galletas que fabricamos (un molde para cada
+                forma), necesitaremos diferentes recetas para el sabor de cada una y por último diferentes maneras de
+                darle color a las galletas.
+            </p><br><br>
+            <h3>¿Qué son las clases en Java?</h3>
+            <p>Una clase en Java se puede entender como un prototipo que define las variables y los métodos comunes a un
+                cierto tipo de instancias, una clase define todo lo que caracteriza y pueden hacer una o varias
+                instancias. <br>
+
+                En nuestro ejemplo de la fábrica de galletas, la clase sería uno de los moldes para galletas, junto con
+                los métodos para colorearlas y la receta (método para prepararlas). Quiere decir que en nuestro programa
+                de Java tendremos una manera de especificar las características de la galleta dado que hay diferentes
+                moldes de galletas.
+            </p><br>
+
+            <p>En java las clases son las matrices de las que luego se pueden crear múltiples instancias del mismo tipo.
+                La clase define las variables y los métodos comunes a las instancias de ese tipo (el tipo de la clase
+                creada), pero luego, cada instancia de esta clase tendrá sus propios valores (su propio molde, color y
+                receta) y compartirán las mismas funciones.
+            </p><br>
+            <p>En java, primero deberemos crear una clase antes de poder crear instancias o ejemplares de esa clase.
+                Evidentemente primero necesitamos los moldes y demás para poder hacer las galletas.</p><br>
+            <h3>¿Qué son los objetos en Java?</h3>
+            <p>En Java, un objeto es básicamente una instancia de una clase (las instancias de las que hablábamos hace
+                un momento). Para el ejemplo de la fábrica de galletas, los objetos vendrían siendo cada una de las
+                diferentes galletas obtenidas de los moldes definidos (clases), creados por medio de un proceso o
+                "constructor" de galletas.
+
+                Muy bien, ya hemos hecho un repaso sobre el concepto de clase y objeto en Java, sin embargo aún no
+                sabemos cómo crearlos ni usarlos, así que vamos a ello. <br><br>
+
+        </div>
+    </section>
+    <div class="coment">
+        <label for="com">Dejanos tu opinion :)</label><br>
+        <textarea name="comentarios" id="intxt" cols="40" rows="3"></textarea>
+        <button class="enviar" onclick="getValor()">Enviar</button><br>
+        <label for="res">Respuestas:</label><br>
+        <textarea name="com" id="mtxt" cols="50" rows="7" readonly></textarea>
+
+    </div>
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // Muestra SideBar
+        $('.boton').on('click', function () {
+            $(".container").toggleClass('show');
+        })
+
+        // Oculta SideBar
+        $('.side-hide').on('click', function () {
+            $(".container").toggleClass('show');
+        });
+    </script>
+    <footer>
+        <p>@2022 Alexander Mendoza. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
